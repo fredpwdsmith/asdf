@@ -1,0 +1,63 @@
+.content ul {
+  &.arrow {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: block;
+      padding-left: 2rem;
+      position: relative;
+      line-height: 1.2;
+      padding-bottom: 0.5rem;
+
+      &:before {
+        @extend %iconfont;
+        content: '\e901';
+        color: $green;
+        line-height: 1.2;
+      }
+      a {
+        color: $grey-dark;
+        font-weight: 700;
+        @include on-event {
+          color: $black;
+        }
+      }
+    }
+  }
+  &.boxes {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: block;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+      position: relative;
+      line-height: 1.2;
+      padding-bottom: 0.5rem;
+      padding-top: 0.5rem;
+      background: $pink;
+      margin-bottom: 0.5rem;
+      text-align: center;
+      &:nth-child(2) {
+        background: $orange;
+      }
+      &:nth-child(3) {
+        background: $green;
+      }
+      &:nth-child(4) {
+        background: $blue;
+      }
+      a {
+        display: block;
+        color: $grey-darker;
+        &:hover {
+          color: $white;
+        }
+      }
+    }
+  }
+}

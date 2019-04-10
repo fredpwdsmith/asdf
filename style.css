@@ -1,0 +1,19 @@
+/*
+Theme Name: WACO
+Theme URI: https://digitalmonopoly.com
+Description: A WordPress starter theme utilising Gulp & BrowserSync.
+Version: 1.0.0
+Author: Adam Butterworth
+Author URI: https://digitalmonopoly.com
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: gulp, wordpress, theme
+Text Domain: WPGST
+*/
+
+#footer.footer .pwd-footer-link {float:none;margin-left: 0;vertical-align: top;display: inline-block;line-height: 1.4em;}
+#footer.footer .pwd-footer-link li {margin-left: 2px;padding:0;}
+
+@media (max-width:413px){
+	.flexi-callout .button.bg-blue, .flexi-callout .button.bg-green, .flexi-callout .button.bg-orange, .flexi-callout .button.bg-pink {font-size: 1em !important;}
+}

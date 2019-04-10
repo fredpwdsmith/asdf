@@ -1,0 +1,27 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+#footer {
+    display: block;
+    background: $black;
+    color: $white;
+    a {
+        color: $white;
+        transform: all 0.3s ease;
+        @include on-event {
+            color: $primary;
+        }
+    }
+
+    ul {
+        list-style-type: none;
+        li {
+            display:inline-block;
+            padding: 0.5rem 0.5rem;
+            font-size: 1.125rem;
+            span {
+                margin-right:0.25rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,148 @@
+.flexi-newsletter {
+  padding: 1.5rem 0;
+  background: $pink;
+  .newsletter-intro {
+    max-width: 940px;
+    margin: 0 auto;
+    text-align: center;
+    .newsletter-head {
+      display: block;
+      font-size: 3rem;
+      // letter-spacing: 2px;
+      line-height: 3rem;
+      padding-bottom: 0.5rem;
+      color: $black;
+      font-weight: 700;
+      text-transform: uppercase;
+      @extend %altfont;
+    }
+    .newsletter-intro {
+      display: block;
+      font-size: 1.125rem;
+      color: $white;
+      padding-bottom: 1rem;
+    }
+  }
+  .validation-message {
+    margin-bottom: 0.5rem;
+    .validation_error {
+      position: relative;
+      font-size: 0.875rem;
+      line-height: 1.25;
+      padding: 0.25rem 0.25rem 0.25rem 42px;
+      text-align: left;
+      // background: darken($primary,3%);
+      color: darken($primary, 30%);
+      display: inline-block;
+      &:after {
+        @extend %iconfont;
+        content: '\e90d';
+        top: 50%;
+        margin-top: -12px;
+        color: $white;
+        left: 0.5rem;
+        font-size: 24px;
+      }
+    }
+  }
+
+  //Gravity Forms... Ohh how I love working with your awful ui...
+
+  .gform_wrapper {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  .gform_footer {
+    .gform_button {
+      padding-right: 3rem;
+      padding-left: 3rem;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      margin-right: 0 !important;
+      background: $green;
+      font-weight: 700;
+      border: none;
+      line-height: 1 !important;
+      @include on-event {
+        background: darken($green, 10);
+        // text-decoration: underline;
+      }
+    }
+  }
+  @media only screen and (min-width: 641px) {
+    .gform_wrapper form.gf_simple_horizontal {
+      // width: calc(100% - 16px);
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .gform_wrapper
+      input:not([type='radio']):not([type='checkbox']):not([type='image']):not([type='file']) {
+      line-height: 1;
+    }
+  }
+  .gform_wrapper li.gfield.gfield_error,
+  .gform_wrapper
+    li.gfield.gfield_error.gfield_contains_required.gfield_creditcard_warning {
+    background-color: transparent;
+    margin-bottom: 0 !important;
+    border-top: 0;
+    border-bottom: 0;
+    padding-bottom: 0;
+    padding-top: 0;
+    box-sizing: border-box;
+  }
+  .gform_wrapper .gfield {
+    position: relative;
+    z-index: 2;
+    .validation_message {
+      position: absolute;
+      bottom: -20px;
+      text-align: center;
+      color: darken($primary, 30);
+      z-index: 1;
+      padding: 0;
+      // background: darken($primary,3%);
+      font-weight: normal;
+    }
+  }
+  .gform_wrapper li.hidden_label input {
+    //margin-top: 12px; a hidden label with a 12px margin... Genius... Idiots
+    margin-top: 0 !important;
+  }
+  .gform_wrapper
+    input:not([type='radio']):not([type='checkbox']):not([type='submit']):not([type='button']):not([type='image']):not([type='file']) {
+    font-size: inherit;
+    font-family: inherit;
+    padding: 7px 4px 8px;
+    letter-spacing: normal;
+    border: none;
+  }
+  .gform_wrapper.gf_browser_chrome .gfield_error input[type='email'],
+  .gform_wrapper.gf_browser_chrome .gfield_error input[type='number'],
+  .gform_wrapper.gf_browser_chrome .gfield_error input[type='password'],
+  .gform_wrapper.gf_browser_chrome .gfield_error input[type='tel'],
+  .gform_wrapper.gf_browser_chrome .gfield_error input[type='text'],
+  .gform_wrapper.gf_browser_chrome .gfield_error input[type='url'],
+  .gform_wrapper.gf_browser_chrome .gfield_error select,
+  .gform_wrapper.gf_browser_chrome .gfield_error textarea,
+  .gform_wrapper.gf_browser_chrome
+    li.gfield_error.field_sublabel_above
+    .ginput_complex
+    input[type='text'] {
+    margin-bottom: 0;
+  }
+  .gform_wrapper
+    li.gfield_error
+    input:not([type='radio']):not([type='checkbox']):not([type='submit']):not([type='button']):not([type='image']):not([type='file']),
+  .gform_wrapper li.gfield_error textarea {
+    border: 1px solid darken($primary, 30);
+  }
+}
+//Confirmation Message
+.gform_confirmation_message {
+  text-align: center;
+  font-weight: 700;
+  color: $white;
+}

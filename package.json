@@ -1,0 +1,50 @@
+{
+  "name": "wpstartergulp",
+  "author": "adbutt",
+  "version": "1.0.0",
+  "license": "GPL-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adbutt/Gulp-Starter-BS.git"
+  },
+  "dependencies": {
+    "bulma": "^0.6.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "browser-sync": "^2.26.3",
+    "eslint": "^4.14.0",
+    "eslint-config-wordpress": "^2.0.0",
+    "gulp": "github:gulpjs/gulp",
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp-babel": "^7.0.0",
+    "gulp-cache": "^1.0.2",
+    "gulp-concat": "^2.5.2",
+    "gulp-filter": "^5.1.0",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-line-ending-corrector": "^1.0.1",
+    "gulp-merge-media-queries": "^0.2.1",
+    "gulp-notify": "^3.0.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-remember": "^1.0.1",
+    "gulp-rename": "^1.2.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sort": "^2.0.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-touch-fd": "github:funkedigital/gulp-touch-fd",
+    "gulp-uglify": "^3.0.0",
+    "gulp-uglifycss": "^1.0.6",
+    "gulp-wp-pot": "^2.0.7"
+  },
+  "scripts": {
+    "postinstall": "npm run start",
+    "start": "gulp",
+    "styles": "gulp styles",
+    "vendorsJS": "gulp vendorsJS",
+    "customJS": "gulp customJS",
+    "images": "gulp images",
+    "clearCache": "gulp clearCache",
+    "translate": "gulp translate"
+  }
+}

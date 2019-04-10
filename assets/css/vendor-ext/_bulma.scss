@@ -1,0 +1,51 @@
+// 1. Import the initial variables
+@import '../../../node_modules/bulma/sass/utilities/initial-variables';
+@import '../../../node_modules/bulma/sass/utilities/functions';
+
+// 2. Set your own initial variables
+
+$blue: #7ebdd3;
+$green: #9bcc76;
+$green-invert: #fff;
+$pink: #c26566;
+$pink-invert: #fff;
+$orange: #dba75a;
+$orange-invert: $grey-dark;
+
+$tablet: 599px;
+
+//3. Set derived variables
+$primary: $pink;
+$primary-invert: $pink-invert;
+
+@import '../../../node_modules/bulma/sass/utilities/derived-variables';
+
+$navbar-background-color: $white;
+$navbar-height: 6.375rem;
+$navbar-item-color: $grey-dark;
+$navbar-item-hover-color: $primary;
+$navbar-item-hover-background-color: transparent;
+$navbar-item-active-color: $pink;
+$navbar-item-active-background-color: transparent;
+$navbar-item-img-max-height: 3.875rem;
+$navbar-tab-hover-background-color: transparent;
+$navbar-tab-hover-border-bottom-color: transparent;
+$navbar-tab-active-color: $black;
+$navbar-tab-active-background-color: transparent;
+$navbar-tab-active-border-bottom-color: transparent;
+$navbar-tab-active-border-bottom-style: solid;
+$navbar-tab-active-border-bottom-width: 0;
+$navbar-dropdown-background-color: $black;
+$navbar-dropdown-border-top: 1px solid $border;
+$navbar-dropdown-offset: -1px;
+$navbar-dropdown-arrow: transparent;
+$navbar-dropdown-radius: 0;
+$navbar-dropdown-z: 20;
+$navbar-dropdown-boxed-radius: 0;
+$navbar-dropdown-boxed-shadow: 0 8px 8px rgba($black, 0.1),
+  0 0 0 1px rgba($black, 0.1);
+$navbar-dropdown-item-hover-color: $green;
+$navbar-dropdown-item-hover-background-color: $black;
+$navbar-dropdown-item-active-color: $green;
+$navbar-dropdown-item-active-background-color: $black;
+$navbar-divider-background-color: $border;

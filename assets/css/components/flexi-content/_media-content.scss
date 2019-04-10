@@ -1,0 +1,23 @@
+.flexi-media-content {
+  padding: 0 1rem 3rem;
+  .media-content-wrapper {
+    max-width: 940px;
+    margin: 0 auto;
+
+    .content {
+      font-size: 1rem;
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        @extend %altfont;
+      }
+      h3 {
+        font-size: 2rem;
+        letter-spacing: normal;
+      }
+    }
+  }
+}

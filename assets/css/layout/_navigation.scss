@@ -1,0 +1,92 @@
+.navbar {
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+.navbar-brand {
+  // .navbar-item {
+  //     padding: 0.5rem 1rem 0.5rem 0;
+  // }
+}
+.navbar-menu {
+  .navbar-item {
+    font-family: 'din_condensedbold';
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 1.37rem;
+    padding: 0.5rem 0.85rem;
+    @include desktop {
+      padding: 0.5rem 0.85rem;
+    }
+    @include widescreen {
+      padding: 0.5rem 1.5rem;
+    }
+    @include fullhd {
+      padding: 0.5rem 2rem;
+    }
+    &.active {
+      color: $primary;
+    }
+    &.has-dropdown {
+      padding: 0;
+    }
+  }
+  .navbar-dropdown {
+    .navbar-item {
+      text-transform: none;
+      color: $white;
+    }
+  }
+}
+.navbar-burger span {
+  height: 2px;
+}
+//Donate Button
+.navbar-item .nv-donate {
+  padding: 0.25rem 0.5rem;
+  background: $orange;
+  line-height: 1;
+  color: $white;
+  @include on-event {
+    background: darken($orange, 10);
+    // text-decoration: underline;
+  }
+}
+
+//Search Icon
+.nav-search {
+  .is-invisible {
+    @extend %visually-hidden;
+  }
+  .icon-search {
+    line-height: 1.125rem;
+    margin-top: -2px;
+  }
+}
+.navbar-menu.is-active {
+  .navbar-dropdown {
+    padding: 0;
+  }
+  .navbar-item {
+    padding-top: 0.25rem;
+    padding-bottom: 0;
+  }
+  .navbar-dropdown a {
+    color: darken($grey-light, 10);
+    @include on-event() {
+      color: $grey-dark;
+    }
+    &.is-active {
+      color: $grey-dark;
+    }
+  }
+}
+
+//Post Navigation
+.post-navigation {
+  background: $white-ter;
+  padding: 1rem 0;
+  a {
+    font-weight: 700;
+    font-size: 1rem;
+    text-transform: uppercase;
+  }
+}

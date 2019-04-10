@@ -1,0 +1,51 @@
+.page {
+  header.main-header {
+    text-align: center;
+  }
+  h1.title {
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $pink;
+  }
+}
+.page-about-waco .flexi-quote-wrapper {
+  background-position: center center;
+}
+
+.page-our-partners {
+  .flexi-media-content {
+    padding: 0 1rem 6rem 1rem;
+    h3 {
+      @extend %altfont;
+      font-size: 2.125rem;
+    }
+    img {
+      max-height: 200px;
+      max-width: 280px;
+    }
+  }
+}
+
+.page-wa-charity-orchestra,
+.page-wa-wind-symphony,
+.page-support-us,
+.page-waco-choir,
+.page-nharmonic-chorale {
+  .flexi-media-content {
+    padding-top: 3rem;
+  }
+}
+.page-waco-choir,
+.page-nharmonic-chorale {
+  .flexi-callout {
+    padding-top: 3rem;
+  }
+}
+// .page-ensembles {
+//   .flexi-image-link a .fade {
+//     &:hover {
+//       background: rgba(0, 0, 0, 0.6);
+//     }
+//   }
+// }

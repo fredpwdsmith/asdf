@@ -1,0 +1,13 @@
+// # Vendors
+
+// Most projects will have a `vendors/` folder containing all the CSS files from external libraries
+// and frameworks – Normalize, Bootstrap, Bulma, and so on.
+
+// To overide use `vendor-ext/` in which you may have files named exactly after the vendors
+// they overwrite. For instance, `vendor-ext/_bulma.scss` is a file containing all
+// CSS rules intended to re-declare some of Bulma's default CSS.
+// This is to avoid editing the vendor files themselves, which is generally not a good idea.
+
+@import
+'../../../node_modules/bulma/bulma',
+'vendor/slick';

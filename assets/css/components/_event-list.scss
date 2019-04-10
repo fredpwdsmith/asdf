@@ -1,0 +1,114 @@
+.events-list {
+    .event-image {
+        @extend %bgcover;
+        display: block;
+        width: 100%;
+        height: 320px;
+    }
+    .event-single {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    &:nth-child(2n) {
+        background: $white-ter;
+    }
+    &:first-of-type {
+        padding-top: 0;
+    }
+    }
+    .ev-meta {
+        h2 {
+            text-transform: uppercase;
+            font-weight: 700;
+            margin-bottom: 0;
+        }
+        .ev-date{
+            padding-left: 0;
+            &:before {
+                display: none;
+                padding-left: 0;
+            }
+        }
+    }
+    .ev-date, .ev-loc {
+        font-size: 0.75rem;
+        display: block;
+        padding-bottom:0.5rem;
+        position:relative;
+        padding-left:20px;
+    }
+    .ev-date:before {
+        @extend %iconfont;
+        font-size: 16px;
+        content:'\e902';
+        color: $blue;
+    }
+    .ev-loc:before {
+        @extend %iconfont;
+        font-size: 16px;
+        content:'\e909';
+        color: $blue;
+    }
+    .ev-dbox {
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width:64px;
+        height:64px;
+        background: $pink;
+        color:$white;
+        font-weight:700;
+        .day {
+            font-size:2rem;
+            line-height: 2rem;
+        }
+        .mnth {
+            font-size:1.25rem;
+            line-height: 1.25rem;
+        }
+
+    }
+    .ev-price {
+        padding: 0.5rem;
+        color: $white;
+        background: $black;
+        font-size: 0.875rem;
+        font-weight: 700;
+    }
+
+    .event-content {
+        padding-top: 1rem;
+    }
+    .event-detail {
+        h3 {
+            @extend %altfont;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+            letter-spacing: normal;
+        }
+        .ev-date, .ev-loc {
+            font-size: 0.875rem;
+            span {
+                display: inline-block;
+                width:80px;
+                font-weight:700;
+                padding-right:3rem;
+            }
+        }
+        .event-booking-wrapper {
+            margin: 1rem auto 2rem;
+            text-align: center;
+            .button {
+                background: $green;
+                font-weight: 700;
+                min-width:60%;
+                color:$white;
+                border: none;
+            &:hover {
+                background: darken($green,10);
+            }
+            }
+        }
+    }
+}

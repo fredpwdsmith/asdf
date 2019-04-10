@@ -1,0 +1,23 @@
+/**
+ * Basic typography style for copy text
+ */
+// body {
+//   color: $text-color;
+//   font: normal 125% / 1.4 $text-font-stack;
+// }
+%altfont {
+  font-family: 'din_condensedbold';
+  font-weight: normal!important;
+  letter-spacing: 0.1em;
+}
+  h1, h2, h3, h4, h5, h6,
+  .h1,.h2, .h3, .h4, .h5, .h6 {
+    &.din {
+      @extend %altfont;
+    }
+}
+h1.title {
+  @extend %altfont;
+  font-size: 3rem;
+  letter-spacing: normal;
+}

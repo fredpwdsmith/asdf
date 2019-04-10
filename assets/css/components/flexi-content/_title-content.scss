@@ -1,0 +1,36 @@
+.flexi-title-content {
+  padding: 5rem 1rem;
+  background: $white-ter;
+  .title-content-wrapper {
+    max-width: 940px;
+    margin: 0 auto;
+
+    .content {
+      font-size: 1.125rem;
+      line-height: 1.5;
+    }
+    .t-title {
+      font-weight: 700;
+      @extend %altfont;
+      font-size: 3rem;
+      text-transform: uppercase;
+      line-height: 3rem;
+    }
+  }
+  &.contrast-light {
+    background: $white;
+    .content {
+      color: darken($grey-light, 10%);
+    }
+  }
+  &.contrast-alt {
+    background: $pink;
+    .content,
+    .t-title {
+      color: $white;
+      a {
+        color: $white;
+      }
+    }
+  }
+}

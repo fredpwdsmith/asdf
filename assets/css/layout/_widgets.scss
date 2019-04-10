@@ -1,0 +1,33 @@
+.widget {
+    font-size: 0.875rem;
+    margin-bottom: 2rem;
+    h6 {
+        @extend %altfont;
+        font-size: 1.25rem;
+        text-transform: uppercase;
+        margin-bottom: 0.5rem;
+        letter-spacing: normal;
+    }
+    a {
+        color: $dark;
+        @include on-event {
+            color: $black;
+            // text-decoration: underline;
+          }
+    }
+    li {
+        padding-bottom: 0.5rem;
+    }
+}
+.widget_recent_entries {
+    .post-date {
+        display: block;
+        font-size: 0.75rem;
+        color:darken($grey-light,10);
+    }
+}
+.widget_categories {
+    li {
+        color:darken($grey-light,10);
+    }
+}

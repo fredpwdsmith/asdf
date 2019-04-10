@@ -1,0 +1,66 @@
+.events-cards {
+    padding: 0 0 3rem 0;
+    .card {
+        padding: 0.5rem 0 0 0.5rem;
+        position: relative;
+        box-shadow:none;
+        .card-image {
+            @extend %bgcover;
+            height: 250px;
+            overflow: hidden;
+        }
+        .card-content {
+            padding: 1.5rem 0;
+
+            .ev-date, .ev-loc {
+                font-size: 0.75rem;
+                display: block;
+                padding-bottom:0.5rem;
+                position:relative;
+                padding-left:20px;
+            }
+            .ev-date:before {
+                @extend %iconfont;
+                font-size: 16px;
+                content:'\e902';
+                color: $blue;
+            }
+            .ev-loc:before {
+                @extend %iconfont;
+                font-size: 16px;
+                content:'\e909';
+                color: $blue;
+            }
+            h3 {
+                margin-top: 1rem;
+                font-weight: 700;
+            }
+            .content {
+                font-size: 1rem;
+            }
+        }
+        .ev-dbox {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top:0;
+            left:0;
+            z-index: 2;
+            width:64px;
+            height:64px;
+            background: $pink;
+            color:$white;
+            font-weight:700;
+            .day {
+                font-size:2rem;
+                line-height: 2rem;
+            }
+            .mnth {
+                font-size:1.25rem;
+                line-height: 1.25rem;
+            }
+        }
+    }
+}

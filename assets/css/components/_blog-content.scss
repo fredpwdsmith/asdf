@@ -1,0 +1,82 @@
+.content {
+    font-size: 1rem;
+    .blog-item {
+        &__author {
+        color: darken($grey-light, 10%);
+        font-size: 0.875rem;
+        padding-top: 1rem;
+        padding-bottom: 0.5rem;
+        }
+        &__title {
+            text-transform:uppercase;
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+        &__readmore
+        {
+        display: inline-block;
+        padding: 1rem 0 3rem;
+        color: $green;
+        text-transform: uppercase;
+        font-weight:700;
+        font-size: 0.875rem;
+        @include on-event {
+            color: darken($green,10);
+            // text-decoration: underline;
+          }
+        }
+    }
+}
+
+//Single Post
+.single-post{
+    #sidebar {
+        margin-top: 8rem;
+        padding-left:0.5rem;
+    }
+}
+.content {
+    .blog-post {
+        &__author {
+        color: darken($grey-light, 10%);
+        font-size: 0.875rem;
+        padding-bottom: 1.5rem;
+        text-align: center;
+        }
+        &__title {
+            text-transform:uppercase;
+            // font-weight: 700;
+            //font-size: 1.5rem;
+            margin-top: 2rem;
+            margin-bottom: 0;
+            text-align: center;
+        }
+    }
+    &.post-content {
+        padding-bottom: 3rem;
+    }
+}
+
+//Masonry Cards
+.masonry {
+    margin-bottom: 3rem;
+    .blog-card {
+        padding-bottom: 2rem;
+        cursor: pointer;
+        h6 {
+            font-size: 0.75rem;
+        }
+        h3 {
+            text-transform: uppercase;
+            letter-spacing: normal;
+            font-size: 1.5rem;
+            color:$black;
+        }
+        .content {
+            font-size: 0.875rem;
+        }
+    }
+    a .blog-card .content p, a .blog-card .content span, a .blog-card h6 {
+        color: darken($grey-light,20);
+    }
+}

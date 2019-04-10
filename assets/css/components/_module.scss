@@ -1,0 +1,25 @@
+// # Components
+// For small components, there is the `components/` folder.
+// While `layout/` is macro (defining the global wireframe), `components/` is more focused on widgets.
+// It contains all kind of specific modules like a slider, a loader, a widget,
+// and basically anything along those lines.
+// There are usually a lot of files in components/ since the whole site/application
+// should be mostly composed of tiny modules.
+
+@import // 'components/slick-theme',
+  'components/hero',
+  'components/hero-slider',
+  'components/button',
+  'components/event-card',
+  'components/blog-card',
+  'components/event-list',
+  'components/blog-content',
+  'components/lists',
+  'components/flexi-content/image-links',
+  'components/flexi-content/quote',
+  'components/flexi-content/media-content',
+  'components/flexi-content/title-content',
+  'components/flexi-content/newsletter',
+  'components/flexi-content/intro-panel',
+  'components/flexi-content/members',
+  'components/flexi-content/callout-button';

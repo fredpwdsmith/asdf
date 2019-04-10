@@ -1,0 +1,19 @@
+.hero {
+  display: block;
+  width: 100%;
+  min-height: 175px;
+  @include tablet {
+    min-height: 250px;
+  }
+  @include desktop {
+    min-height: 350px;
+  }
+  @include widescreen {
+    min-height: 400px;
+  }
+  &.image-cover {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}

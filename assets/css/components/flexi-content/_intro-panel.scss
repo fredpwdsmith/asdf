@@ -1,0 +1,46 @@
+.flexi-intro-panel {
+  .panel-image {
+    min-height: 350px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    @include tablet {
+      min-height: 420px;
+    }
+    @include desktop {
+      min-height: 524px;
+    }
+  }
+  .content-wrapper {
+    max-width: 552px;
+    padding: 3rem 1rem;
+    @include desktop {
+      padding: 6rem 0.75rem 0 6rem;
+    }
+    h2 {
+      margin-top: 0;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 3rem;
+      @extend %altfont;
+    }
+    .pre-title {
+      display: block;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 1.125rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+    &.contrast-light {
+      color: $white;
+      h2 {
+        color: $white !important;
+      }
+      .pre-title {
+        color: $white !important;
+      }
+    }
+  }
+}

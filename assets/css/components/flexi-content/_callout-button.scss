@@ -1,0 +1,39 @@
+%callbutton {
+    min-width: 50%;
+    font-weight:700;
+    text-transform:uppercase;
+    color:$white;
+    border:none;
+    font-size:1.5rem;
+}
+.flexi-callout {
+    padding-bottom: 3rem;
+        .button.bg-blue {
+            @extend %callbutton;
+            background-color: $blue;
+            @include on-event {
+                background-color: darken($blue,10);
+            }
+        }
+        .button.bg-green {
+            @extend %callbutton;
+            background-color: $green;
+            @include on-event {
+                background-color: darken($green,10);
+            }
+        }
+        .button.bg-orange {
+            @extend %callbutton;
+            background-color: $orange;
+            @include on-event {
+                background-color: darken($orange,10);
+            }
+        }
+        .button.bg-pink {
+            @extend %callbutton;
+            background-color: $pink;
+            @include on-event {
+                background-color: darken($pink,10);
+            }
+        }
+}
